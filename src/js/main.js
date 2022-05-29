@@ -193,7 +193,8 @@ function geolocationOnError(){
 }
 
 async function getApiData(userLocation){
-  const apiUrl = `http://api.openweathermap.org/data/2.5/weather?lat=${userLocation.latitude}&lon=${userLocation.longitude}&appid=${process.env.API_KEY}&units=metric&lang=pt_BR`
+  const apiKey = process.env.API_KEY
+  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${userLocation.latitude}&lon=${userLocation.longitude}&appid=${apiKey}&units=metric&lang=pt_BR`
   
   const response = await fetch(apiUrl)
   .then(res => res.json())
