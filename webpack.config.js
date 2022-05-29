@@ -8,7 +8,7 @@ const prod = 'production'
 const dev = 'development'
 
 const assets = { input: path.resolve(__dirname, './src/assets'),
-  output: path.resolve(__dirname, './dist/assets')
+  output: path.resolve(__dirname, './public/assets')
 }
 
 module.exports = {
@@ -16,7 +16,7 @@ module.exports = {
   entry: path.resolve(__dirname, './src/index.js'),
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, './ ')
+    path: path.resolve(__dirname, './public')
   },
   module: {
     rules: [
