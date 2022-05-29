@@ -1,10 +1,10 @@
  # 🚀  Programa de Capacitação em VTEX
 > - 👉 Desafio JS - Enext
 > - 🖥️ Figma layout: https://www.figma.com/file/IIeHly79IO31qHp8pklyvk/On-Climate?node-id=0%3A1
-> - 🔗 Deploy: 
+> - 🔗 Deploy: https://sales-araujo.github.io/Desafio-JS---Enext/
 
 
-
+![Image-Inital](https://user-images.githubusercontent.com/101731656/170888550-d00a599f-a69b-4140-9c97-1700b4a88aff.PNG)
 
 
 ---
@@ -23,9 +23,6 @@
 - [x] Descrição do Clima. Ex: ‘light rain’.
 - [x] Perpertuar os climas salvos no localStorage ou cookies.
 - [x] Botão salvar clima atual.
-  - [x] Pegar os dados do html e salvar no array savedClimate.
-  - [x] Salvar o novo array no localStorage.
-  - [x] Renderizar o novo array savedClimate no modal.
 - [x] Se não possuir, não exibir nada.
 
 ---
@@ -51,6 +48,12 @@
   </a>
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
     <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="Javascript Badge"/>
+  </a>
+   <a href="https://webpack.js.org/" target="_blank">
+    <img src="https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black" alt="Javascript Badge"/>
+  </a>
+   <a href="https://babeljs.io/" target="_blank">
+    <img src="https://img.shields.io/badge/Babel-F9DC3e?style=for-the-badge&logo=babel&logoColor=black" alt="Javascript Badge"/>
   </a>
 </div>
 
