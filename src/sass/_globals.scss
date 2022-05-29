@@ -1,0 +1,235 @@
+@use '_mixins';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  scroll-behavior: smooth;
+}
+
+:root{
+  --background-white: #fff;
+  --background-yellow: #fcd929;
+  --background-yellow-200: #F8C95B;
+  --background-blue: #90D6FD;
+  --background-blue-100: #D0F3FE;
+  --background-blue-200: #1F5CFA;
+  --background-grey: #515151;
+  --background-grey-200: #628e75;
+  --background-grey-300: #3a5746;
+
+  --background-linear-green: linear-gradient(180deg, rgba(69, 168, 161, 0.82) 0%, rgba(251, 232, 192, 0) 100%);
+  --background-linear-blue: linear-gradient(180deg, #88D4FF 0%, rgba(251, 232, 192, 0) 100%);
+  --bacground-linear-blue-200: linear-gradient(180deg, #CCF3FF 0%, rgba(255, 255, 255, 0) 100%);
+  --background-linear-dark-blue: linear-gradient(180deg, #01288A 29.69%, rgba(93, 116, 177, 0.9) 99.94%, rgba(93, 116, 177, 0.645833) 99.95%, rgba(0, 63, 226, 0.34) 99.96%, rgba(93, 116, 177, 0.645833) 99.97%);
+  --background-linear-grey: linear-gradient(180deg, #9A9A9A 0%, rgba(64, 64, 64, 0) 100%);
+  
+  --text-black: #000;
+  --text-white: #fff;
+
+  --fonts-Oswald: 'Oswald', sans-serif;
+  --fonts-Open-Sans: 'Open Sans', sans-serif;
+  --fonts-Poppins: 'Poppins', sans-serif;
+}
+
+body {
+  background-image: var(--background-linear-green);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &.dayTheme{
+    background-image: var(--background-linear-blue);
+
+    .btn-climate {
+
+      .btn-save{
+        background-color: var(--background-blue);
+      }
+    }
+  }
+
+  &.nightTheme{
+    background-image: var(--background-linear-dark-blue);
+
+    .side-menu{
+      img{
+        filter: invert(96%) sepia(98%) saturate(0%) hue-rotate(86deg) brightness(106%) contrast(100%);
+      }
+    }
+
+    .btn-climate {
+
+      .btn-save{
+        background-color: var(--background-blue-200);
+        color: var(--text-white);
+        opacity: 1;
+      }
+
+      p{
+        color: var(--text-white);
+
+        span{
+          color: var(--text-white);
+        }
+      }
+    }
+
+    .title-climate {
+      h1, h2 {
+        color: var(--text-white);
+      }
+    }
+
+    .info-climate{
+      h2, .data-climate {
+        color: var(--text-white);
+        font-weight: normal;
+      }
+    }
+
+    .loading-climate{
+      p{
+        color: var(--text-white);
+      }
+    }
+
+    .subData-climate, .minMax-climate, .wind-climate, .moisture-climate{
+      p {
+        color: var(--text-white);
+        font-weight: normal;
+      }
+    }
+  }
+  
+  &.onCloudy{
+    background-image: var(--background-linear-grey);
+
+    .side-menu{
+      img{
+        filter: none;
+      }
+    }
+
+    .btn-climate {
+      .btn-save{
+        background-color: var(--background-grey);
+        color: var(--text-white);
+      }
+
+      p{
+        color: var(--text-black);
+
+        span{
+          color: var(--text-black);
+        }
+      }
+    }
+
+    .title-climate {
+      h1, h2 {
+        color: var(--text-black);
+        font-weight: 600;
+      }
+    }
+
+    .info-climate{
+      h2, .data-climate {
+        color: var(--text-black);
+        font-weight: 600;
+      }
+    }
+
+    .subData-climate, .minMax-climate, .wind-climate, .moisture-climate{
+      p {
+        color: var(--text-black);
+        font-weight: 600;
+      }
+      .svg-white{
+        filter: none;
+      }
+    }
+  }
+
+  &.onSnow{
+    background-image: var(--bacground-linear-blue-200);
+
+    .side-menu{
+      img{
+        filter: none;
+      }
+    }
+
+    .btn-climate {
+      .btn-save{
+        background-color: var(--background-blue-100);
+        color: var(--text-black);
+      }
+
+      p{
+        color: var(--text-black);
+
+        span{
+          color: var(--text-black);
+        }
+      }
+    }
+
+    .title-climate {
+      h1, h2 {
+        color: var(--text-black);
+        font-weight: 600;
+      }
+    }
+
+    .info-climate{
+      h2, .data-climate {
+        color: var(--text-black);
+        font-weight: 600;
+      }
+    }
+
+    .subData-climate, .minMax-climate, .wind-climate, .moisture-climate{
+      p {
+        color: var(--text-black);
+        font-weight: 600;
+      }
+      .svg-white{
+        filter: none;
+      }
+    }
+  }
+}
+
+body,
+input,
+textarea,
+button {
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-weight: 600;
+}
+
+button {
+  cursor: pointer;
+}
+
+[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.svg-white {
+  filter: invert(96%) sepia(98%) saturate(0%) hue-rotate(86deg) brightness(106%) contrast(100%);
+}

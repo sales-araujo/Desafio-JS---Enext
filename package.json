@@ -1,0 +1,30 @@
+{
+  "name": "desafiojs",
+  "version": "1.0.0",
+  "description": "Desafio - JS = Sales Araujo",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "babel-loader": "^8.2.5",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.0",
+    "postcss-loader": "^7.0.0",
+    "sass": "^1.52.1",
+    "sass-loader": "^13.0.0",
+    "style-loader": "^3.3.1",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "dotenv-webpack": "^7.1.0"
+  }
+}

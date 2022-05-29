@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Programa de Capacitação - VTEX = Enext" />
+    <meta name="Author" content="Sales Araujo" />
+    <meta name="Location" content="Brasil, PE" />
+
+    <title>On-Climate</title>
+
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Oswald:wght@300&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="modal-historic" id="modalHistoric">
+      <div class="container-historic" id="containerModalHistoric">
+        <div class="modal-title">
+          <h2>Histórico</h2>
+          <button id="modalHistoricClose">
+            <img src="./assets/img/botao-fechar.svg" alt="Botão para fechar modal" />
+          </button>
+        </div>
+        <div class="container-empity-state" id="empity-state">
+          <img src="./assets/img/empity-state.png" class="empity-state" alt="Empity Satate - Histórico Vazio">
+        </div>
+        <div class="information-historic" id="information-historic" ></div>
+      </div>
+    </div>
+
+    <header>
+      <div class="menu-Links">
+        <img src="./assets/img/Logo-Climate.svg" class="logo active" alt="Logo On-Climate - Previsão do tempo" />
+        <img src="./assets/img/Logo-Noturno.svg" class="logo" alt="Logo On-Climate-Noturno"/>
+        <button class="side-menu" id="modalHistoricBtn">
+          <img src="./assets/img/menu-burger-black.svg" alt="Side Menu"/>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <div class="loading-climate disabled" id="loadingClimate">
+        <img src="./assets/img/loading-climate.gif" alt="Loading dados do clima" />
+        <p>Buscando as informações do clima...</p>
+      </div>
+      
+      <div class="page-main" id="pageMain">
+        <img src="./assets/img/image-climate.svg" alt="Imagem Principal - Clima" />
+        <h2>Qual é o clima da sua cidade? Consulte no botão abaixo:</h2>
+        <div class="btn-climate">
+          <button class="btn-localization" id="btnLocation">
+            <img src="./assets/img/localizacao.svg" alt="Icone de localização" />
+            <p>Usar minha Localização</p>
+          </button>
+        </div>
+      </div>
+      
+    </main>
+  </body>
+</html>
+

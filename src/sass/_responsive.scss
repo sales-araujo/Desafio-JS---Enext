@@ -1,0 +1,23 @@
+@media screen and (max-height: 590px) and (max-height: 610px){
+  html{
+    body{
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 480px){
+  html{
+    main{
+      padding-top: 3rem;
+
+      .page-main{
+        img{
+          width: 100%;
+          max-width: 230px;
+        }
+      }
+
+    }
+  }
+}
