@@ -37,6 +37,24 @@
 - [x] Mudar as imagens de acordo com a descrição do clima.
 
 --- 
+#### :compass: Passo a passo
+
+1. Clone o repositório 
+```bash
+git clone https://github.com/sales-araujo/Desafio-JS---Enext.git
+```
+
+2. Entre na pasta, instale as depêndencias e rode o projeto com:
+```bash
+cd desafiojs && npm install && npm run build
+```
+
+3. Acesse no seu navegador 
+```bash
+http://localhost:5501/
+```
+
+---
 ## :hammer_and_wrench: Tecnologias
 
 <div align="left">
